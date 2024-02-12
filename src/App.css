@@ -1,0 +1,69 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and  (max-width: 565px) {
+  .img-section .img{
+  width: 50px;
+  padding: 20px 3px;
+    margin-right: -80px;
+  }
+  .card-price{
+   
+    padding-right: 15px;
+    font-size: 20px;
+  }
+  .second-section .totel-text {
+font-size: 10px;
+padding-left: 45px;
+  }.second-section .total{   
+    margin-left: -140px;
+
+
+  }
+  .second-section .totel-text .h3{
+    margin-left: 120px;
+    
+  }
+  .second-section .totel .h4{
+    margin-left: -60px;
+  }
+  .second-section .totel .col{
+ margin-right: 260px;
+  }
+}
