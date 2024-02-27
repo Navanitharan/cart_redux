@@ -1,8 +1,12 @@
-
 import './App.css';
 import Card from './Card';
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { addProduct } from './Reducers/Product-react';
 import 'bootstrap/dist/css/bootstrap.css'
 import { Provider } from './Usercontext';
+import { store } from './Store';
+
 function App() {
 
 
@@ -80,7 +84,13 @@ function App() {
             
         }
     ]
+    const dispatch = useDispatch();
+
+    useEffect(() => {
+      products.forEach(product => dispatch(addProduct(product)));
+    }, [dispatch]);
   
+
 
   return (
     <Provider>
